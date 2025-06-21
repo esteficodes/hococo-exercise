@@ -1,0 +1,97 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 700px;
+  margin: 80px auto 40px auto;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+
+.add-post-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(90,145,254); 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.post-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+.post-card h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.post-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.edit-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+.edit-button:hover {
+  color: #111;
+}
+
+
+
+
+/*DESKTOP DEFAULT */
+.main-container {
+  padding-top: 3rem;
+}
+
+/*SMALLER SCREENS OVERRIDE */
+@media (max-width: 640px) {
+  .main-container {
+    padding-top: 1rem;
+  }
+}
+
+
+
