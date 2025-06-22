@@ -75,29 +75,9 @@ export default function PostForm({
   };
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.6)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: 9999,
-      }}
-    >
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          backgroundColor: "#fff",
-          padding: "24px 20px",
-          borderRadius: "8px",
-          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-          maxWidth: "400px",
-          width: "100%",
-        }}
-      >
-        <h2 style={{ fontSize: "1.25rem", fontWeight: 600, marginBottom: "10px" }}>
+    <div className="modal-overlay">
+      <form className="modal-form" onSubmit={handleSubmit}>
+        <h2>
           {editingPost ? "Edit Post" : "Add New Post"}
         </h2>
         <input
@@ -105,21 +85,14 @@ export default function PostForm({
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
         />
         <textarea
           placeholder="Body"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={4}
-          style={{ width: "100%", padding: "8px", marginBottom: "16px" }}
         />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            gap: "8px",
-          }}
+        <div className="modal-buttons"
         >
           <button type="button" onClick={onClose}>
             Cancel

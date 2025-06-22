@@ -55,7 +55,7 @@ src/
 
 ### What would I improve if I had more time
 
-- The overall design could use a lot of improvement. I would reconsidering the overall measurements and spacing, as for example the forms margins and the hovering over effect, which looks off. Also, the spacing between the pencil icon and the text.
+- The overall design could use a lot of improvement. I would reconsidering the overall measurements and spacing, as for example the forms margins and the hovering over effect, which looks off. Also, the spacing between the pencil icon and the text. The responsiveness of the modal form it's also pending. I tried to prioritize delivering a functional project within the indicated timeframe, which clearly went on detriment of the design.
 - I would have used Tailwind, which I desisted of using after I ran into a long time-consuming issue.
 - Adding more features had to be left out due to lack of time, but I would have added the search functionality by adding a text field input, where users can search for a query, using JavaScript filtering and displaying filteredPosts instead of Posts.
 - Error handling, by wrapping the fetch calls in try...catch blocks and showing a message if the API fails.
